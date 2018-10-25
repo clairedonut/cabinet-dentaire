@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('http://fonts.googleapis.com/css?family=Open+Sans');
+
+// ----- media queries:
+$min-break-small: "only screen and (min-width : 576px)";
+$min-break-medium: "only screen and (min-width : 768px)";
+$min-break-large: "only screen and (min-width : 992px)";
+$min-break-xlarge: "only screen and (min-width : 1200px)";
+
+$max-break-small: "only screen and (max-width : 350px)";
+
+
+$font-title : 'Raleway', sans-serif;
+// $font-portfolio: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-portfolio: 'Open Sans', sans-serif;
+
+$font-poppins: 'Poppins', sans-serif;
+
+
+
+// custom mixins
+
+@mixin flex-row($row,$column) {
+  display: flex;
+  flex-direction: row;
+  justify-content: $row;
+  align-items: $column;
+}
+
+@mixin flex-column($row,$column) {
+  display: flex;
+  flex-direction: column;
+  align-items: $row;
+  justify-content: $column;
+}
+
+@mixin layout($background-color) {
+  background-color: $background-color;
+  padding: 4em 1.5em;
+}
+
+@mixin parallax ($url, $height) {
+
+  /* Image used */
+  background-image: url($url);
+
+  /* Set a specific height */
+  height: $height;
+
+  /* To create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Applicable to whole page */
+
+body {
+  h1, h2, h3, h4, p{
+    // font-family: $font-portfolio;
+    // font-weight: 200;
+  }
+  h2 {
+    // margin: 2em 0 1em;
+    // font-size: 5em;
+  }
+  p {
+    // margin: 1em;
+    // font-size: 1.4em;
+  }
+}

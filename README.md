@@ -1,14 +1,18 @@
-# Site Vitrine d'un cabinet-dentaire
+# vue-static-pre
 
-Première ébauche d'un site vitrine: 
-- Refonte du site avec un design plus moderne
-- Format responsive 
-- Vue.JS (inclus optimisation SEO)
+> A Vue.js project
 
-**Version non final (liens desactivés et bogus content)**
+## Build Setup
 
-Site - Avant et Apres: 
+``` bash
+# install dependencies
+npm install
 
-![Before version](https://github.com/clairedonut/cabinet-dentaire/blob/master/before-version.png)
-![After version](https://github.com/clairedonut/cabinet-dentaire/blob/master/after-version.png)
+# serve with hot reload at localhost:8080
+npm run dev
 
+# build for production with minification
+npm run build
+```
+
+For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
